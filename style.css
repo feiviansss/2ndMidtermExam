@@ -1,0 +1,99 @@
+body {
+    background: rgb(37, 38, 39);
+    background: linear-gradient(
+      90deg,
+      rgb(31, 32, 32) 0%,
+      rgb(77, 79, 80) 54%,
+      rgb(158, 159, 160) 82%
+    );
+    text-align: center;
+}
+  
+  h1 {
+    color: white;
+    font-family: 'Shalimar', cursive;
+  }
+
+  h2{
+    color: white;
+    font-family: 'Shalimar', cursive;
+  }
+
+
+  .character-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    width: 50%;
+    gap: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-family: 'Shalimar', cursive;
+  }
+
+  .cardBlock,
+  .cardBlockBack {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    font-size: 45px;
+  }
+  
+  .imgContainer {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .cardBlock p {
+    margin: 5px;
+    font-size: 70px;
+
+  }
+  
+  .name {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  #spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .pagination {
+    width: 90%;
+    margin-left: 325px ;
+    margin-bottom: 50px;
+  }
+  
+  .cardContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipCard:hover .cardContainer {
+    transform: rotateY(180deg);
+  }
+  
+  .cardBlock,
+  .cardBlockBack {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .cardBlockBack {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0%;
+  }
+  
